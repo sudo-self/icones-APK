@@ -1,0 +1,42 @@
+{
+  "packageId": "sudo_self.vercel.app",
+  "host": "icons-git-main-sudo-self.vercel.app",
+  "name": "icons_APK_by_JR.",
+  "launcherName": "PWA",
+  "display": "standalone",
+  "themeColor": "#FFD31D",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#333333",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://sudo-self.github.io/icones/1.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "/Users/thatonedev/Downloads/icones-main/android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "66",
+  "appVersionCode": 66,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://sudo-self.github.io/icones/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://sudo-self.github.io/icones/",
+  "minSdkVersion": 19,
+  "orientation": "default",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "66"
+}
