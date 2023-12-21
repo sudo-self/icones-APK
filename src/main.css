@@ -1,0 +1,115 @@
+body {
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.dark {
+  background: #181818;
+}
+
+.btn {
+  @apply 
+    border border-base rounded shadow-sm outline-none
+    px-4 py-1 text-gray-600 text-sm transition-all bg-base
+    hover:(bg-gray-50 shadow)
+    dark:(border-dark-200 text-gray-300)
+    dark:hover:(border-primary bg-dark-100 text-primary)
+    focus:(shadow outline-none);
+}
+
+.btn.small {
+  @apply px-2 py-1 text-sm;
+}
+
+.dragging {
+  -webkit-app-region: drag;
+}
+
+.non-dragging {
+  -webkit-app-region: no-drag;
+}
+
+.overflow-overlay {
+  overflow: auto;
+  overflow: overlay;
+}
+
+.overflow-y-overlay {
+  overflow-y: auto;
+  overflow-y: overlay;
+}
+
+.overflow-x-overlay {
+  overflow-x: auto;
+  overflow-x: overlay;
+}
+
+/* Scrollbar */
+* {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: 6px;
+  scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(128, 128, 128, 0.5);
+  border-radius: 3px;
+}
+
+/* Tootip */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  padding: 5px 8px;
+  top: 135%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  @apply whitespace-nowrap;
+}
+
+@media (hover: hover) {
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* fallback black svg in dark mode */
+.icons-item svg,
+.dark .icons-item [fill="#000"],
+.dark .icons-item [fill="#000000"],
+.dark .icons-item [fill="black"] {
+  fill: currentColor;
+}
+
+.dark .icons-item [stroke="#000"],
+.dark .icons-item [stroke="#000000"],
+.dark .icons-item [stroke="black"] {
+  stroke: currentColor;
+}
